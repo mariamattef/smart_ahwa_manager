@@ -37,9 +37,7 @@ Smart Ahwa Manager is a comprehensive solution for coffee shop owners and staff 
 
 ## Video Walkthrough
 
-[![Watch the video](assets/screenshoots/dashboard.png)](assets/video/Android%20Emulator%20-%20Pixel_9_API_24_5554%202025-09-18%2011-41-13.mp4)
-
-> **Note:** The video above is a local file. For it to be viewable by others, you should upload it to a service like YouTube and update the link.
+![Video Walkthrough](assets/video/ahwa_manager.gif)
 
 ## Built With
 
