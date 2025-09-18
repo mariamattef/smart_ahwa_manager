@@ -26,7 +26,7 @@ class _NewOrderScreenState extends State<NewOrderScreen> {
       style: const TextStyle(
         fontSize: 14,
         fontWeight: FontWeight.w500,
-        color: Color(0xFF374151), // text-gray-700
+        color: Color(0xFF374151), 
       ),
     );
   }
@@ -36,17 +36,17 @@ class _NewOrderScreenState extends State<NewOrderScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
-        elevation: 0.5, // Corresponds to shadow-sm
+        elevation: 0.5, 
         leading: IconButton(
           icon: const Icon(Icons.arrow_back_ios_new, color: Color(0xFF374151)),
           onPressed: () {
-            // Handle back navigation
+           
           },
         ),
         title: const Text(
           'New Order',
           style: TextStyle(
-            color: Color(0xFF1F2937), // text-gray-800
+            color: Color(0xFF1F2937), 
             fontWeight: FontWeight.bold,
             fontSize: 20,
           ),
@@ -55,14 +55,14 @@ class _NewOrderScreenState extends State<NewOrderScreen> {
       ),
       body: Column(
         children: [
-          // The Expanded widget makes the SingleChildScrollView take up all available space
+         
           Expanded(
             child: SingleChildScrollView(
               padding: const EdgeInsets.all(24.0), // p-6
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Customer Name Field
+                 
                   _buildLabel('Customer Name'),
                   const SizedBox(height: 4.0), // mb-1
                   TextFormField(
@@ -70,9 +70,9 @@ class _NewOrderScreenState extends State<NewOrderScreen> {
                       hintText: 'e.g., Ahmed',
                     ),
                   ),
-                  const SizedBox(height: 24.0), // space-y-6
+                  const SizedBox(height: 24.0), 
 
-                  // Drink Type Dropdown
+                
                   _buildLabel('Drink Type'),
                   const SizedBox(height: 4.0),
                   DropdownButtonFormField<String>(
@@ -96,14 +96,13 @@ class _NewOrderScreenState extends State<NewOrderScreen> {
                       );
                     }).toList(),
                   ),
-                  const SizedBox(height: 24.0), // space-y-6
+                  const SizedBox(height: 24.0), 
 
-                  // Special Instructions Text Area
                   _buildLabel('Special Instructions'),
                   const SizedBox(height: 4.0),
                   TextFormField(
-                    minLines: 4, // Sets the initial height
-                    maxLines: null, // Allows the field to expand vertically
+                    minLines: 4, 
+                    maxLines: null, 
                     keyboardType: TextInputType.multiline,
                     decoration: const InputDecoration(
                       hintText: 'e.g., “extra mint, ya rais”',
@@ -113,7 +112,6 @@ class _NewOrderScreenState extends State<NewOrderScreen> {
               ),
             ),
           ),
-          // Bottom "Add Order" Button Container
           Container(
             padding: const EdgeInsets.all(16.0),
             decoration: const BoxDecoration(

@@ -28,7 +28,6 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
     );
   }
 
-  // Builds the main screen layout with AppBar, content, and bottom button
   Widget _buildMainContent() {
     return Column(
       children: [
@@ -54,7 +53,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
                     _buildItemsSection(),
                     _buildSpecialInstructions(),
                     _buildPriceSummary(),
-                    const SizedBox(height: 120), // Space for the floating button
+                    const SizedBox(height: 120), 
                   ],
                 ),
               ),
@@ -112,7 +111,6 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
     );
   }
 
-  // Helper for a single row in the info card
   Widget _buildInfoRow(String title, String value) {
     return Text.rich(
       TextSpan(
@@ -132,7 +130,6 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
     );
   }
   
-  // Section containing the list of ordered items
   Widget _buildItemsSection() {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 8.0),
@@ -161,7 +158,6 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
     );
   }
   
-  // Reusable widget for a single item in the order list
   Widget _buildOrderItem({
     required IconData icon,
     required Color iconBgColor,
@@ -213,7 +209,6 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
     );
   }
   
-  // Section for special instructions
   Widget _buildSpecialInstructions() {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
@@ -238,7 +233,6 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
     );
   }
   
-  // The final price calculation section
   Widget _buildPriceSummary() {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
@@ -258,7 +252,6 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
     );
   }
 
-  // Reusable widget for a single row in the price summary
   Widget _buildSummaryRow(String title, String amount, {bool isBold = false}) {
     final style = TextStyle(
       fontSize: isBold ? 18 : 16,
@@ -312,7 +305,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
     );
   }
   
-  // The confirmation dialog overlay
+ 
   Widget _buildConfirmationDialog() {
     return BackdropFilter(
       filter: ImageFilter.blur(sigmaX: 4.0, sigmaY: 4.0),
@@ -388,7 +381,6 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
     );
   }
 
-  // Reusable widget for the buttons inside the dialog
   Widget _buildDialogButton({
     required String text,
     required bool isPrimary,

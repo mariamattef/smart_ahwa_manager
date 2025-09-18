@@ -26,7 +26,7 @@ class DashboardViewModel extends ChangeNotifier {
 
     try {
       _allOrders = await _orderRepository.getPendingOrders();
-      _orders = List.from(_allOrders); // Initially, display all orders
+      _orders = List.from(_allOrders); 
     } catch (e) {
      
       debugPrint("Error fetching orders: $e");
