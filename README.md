@@ -21,6 +21,26 @@ Smart Ahwa Manager is a comprehensive solution for coffee shop owners and staff 
     *   Quickly find orders by searching for customer names or drink types.
     *   Filter top-selling drinks by category.
 
+## Screenshots
+
+| Dashboard | New Order |
+| :---: | :---: |
+| ![Dashboard](assets/screenshoots/dashboard.png) | ![New Order](assets/screenshoots/newOrder.png) |
+
+| Order Details 1 | Order Details 2 |
+| :---: | :---: |
+| ![Order Details 1](assets/screenshoots/orderDetails1.png) | ![Order Details 2](assets/screenshoots/orderDetails2.png) |
+
+| Reports | Order 2 |
+| :---: | :---: |
+| ![Reports](assets/screenshoots/reports.png) | ![Order 2](assets/screenshoots/order2.png) |
+
+## Video Walkthrough
+
+[![Watch the video](assets/screenshoots/dashboard.png)](assets/video/Android%20Emulator%20-%20Pixel_9_API_24_5554%202025-09-18%2011-41-13.mp4)
+
+> **Note:** The video above is a local file. For it to be viewable by others, you should upload it to a service like YouTube and update the link.
+
 ## Built With
 
 This project is built with a strong emphasis on modern software development practices and a scalable architecture.
